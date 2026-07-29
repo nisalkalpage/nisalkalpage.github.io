@@ -1,2 +1,542 @@
-<h1>Nisal Vihan Kalpage</h1>
-<p>Website coming soon.</p>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nisal Vihan Kalpage — Electrical Engineer, wireless communications researcher, and PhD candidate at Monash University.">
+  <meta name="author" content="Nisal Vihan Kalpage">
+  <meta name="theme-color" content="#07111f">
+  <meta property="og:title" content="Nisal Vihan Kalpage | Engineer & Researcher">
+  <meta property="og:description" content="Research in OTFS, wireless communications, signal processing, and integrated sensing and communications.">
+  <meta property="og:type" content="website">
+  <title>Nisal Vihan Kalpage | Engineer & Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <canvas id="network-canvas" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="shell nav-shell">
+      <a class="brand" href="#home" aria-label="Nisal Kalpage home">
+        <span class="brand-mark">NK</span>
+        <span class="brand-copy">Nisal Kalpage<small>Engineer · Researcher</small></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-button command-button" type="button" aria-label="Open quick navigation" title="Quick navigation (Ctrl/⌘ K)">
+          <span>⌘K</span>
+        </button>
+        <button class="icon-button theme-toggle" type="button" aria-label="Switch colour theme" title="Switch colour theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.41M17.66 6.34l1.41-1.41"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="shell hero-grid">
+        <div class="hero-content reveal">
+          <div class="availability-pill"><span></span> Based in Melbourne, Australia</div>
+          <p class="kicker">Electrical Engineer · Researcher · PhD Candidate</p>
+          <h1>
+            Engineering reliable
+            <span class="gradient-text">wireless systems</span>
+            for high-mobility environments.
+          </h1>
+          <p class="hero-lead">
+            I am <strong>Nisal Vihan Kalpage</strong>, a communications engineer and PhD candidate at Monash University. My work spans orthogonal time frequency space modulation, integrated sensing and communications, signal processing, communication theory, and practical system design.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary magnetic" href="#research">Explore my work <span>↘</span></a>
+            <a class="button secondary" href="Nisal-Kalpage-CV.pdf" target="_blank" rel="noreferrer">View CV <span>↗</span></a>
+          </div>
+
+          <div class="hero-meta">
+            <a href="mailto:vihankalpage@gmail.com">vihankalpage@gmail.com</a>
+            <span></span>
+            <a href="https://www.linkedin.com/in/vihan-kalpage" target="_blank" rel="noreferrer">LinkedIn</a>
+            <span></span>
+            <a href="https://github.com/Vihankalpage" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="150">
+          <div class="orbit-card tilt">
+            <div class="orbit-ring ring-one"></div>
+            <div class="orbit-ring ring-two"></div>
+            <div class="orbit-ring ring-three"></div>
+            <div class="portrait-core">
+              <img src="https://avatars.githubusercontent.com/u/52083765?v=4" alt="Nisal Vihan Kalpage">
+            </div>
+            <span class="orbit-node node-one">OTFS</span>
+            <span class="orbit-node node-two">ISAC</span>
+            <span class="orbit-node node-three">MIMO</span>
+            <span class="orbit-node node-four">DSP</span>
+          </div>
+          <div class="floating-card floating-card-one">
+            <span class="floating-label">Current focus</span>
+            <strong>Next-generation wireless communications</strong>
+          </div>
+          <div class="floating-card floating-card-two">
+            <strong>Monash University</strong>
+            <span>ECSE · PhD Candidate</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell stats-grid reveal" data-delay="220">
+        <article><strong data-count="4">0</strong><span>Publications listed</span></article>
+        <article><strong data-count="15" data-suffix="+">0</strong><span>Honours & awards</span></article>
+        <article><strong data-count="8">0</strong><span>Teaching units</span></article>
+        <article><strong data-count="6">0</strong><span>Technical projects</span></article>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="shell two-column">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · About</p>
+          <h2>Research depth, engineering discipline, and practical delivery.</h2>
+        </div>
+        <div class="about-copy reveal" data-delay="100">
+          <p class="large-copy">
+            My background combines advanced training in communications systems, wireless technologies, and network theory with practical exposure to infrastructure, embedded systems, PCB design, software-defined radio, and multidisciplinary project coordination.
+          </p>
+          <p>
+            Across academic and industry roles, I have contributed to system design, performance analysis, technical documentation, teaching, and project delivery. I bring a structured approach to complex technical problems and communicate clearly across research, engineering, and student-facing environments.
+          </p>
+          <div class="expertise-cloud" aria-label="Areas of expertise">
+            <span>Wireless Communications</span><span>Satellite Communications</span><span>Integrated Sensing & Communications</span><span>Communication Theory</span><span>Signal Processing</span><span>Information Theory</span><span>Network Engineering</span><span>WiFi Modelling</span><span>Technical Documentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">02 · Research</p>
+            <h2>Research themes</h2>
+          </div>
+          <p>My PhD research centres on orthogonal time frequency space modulation and the design and analysis of reliable signal-processing methods for time-varying channels.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card feature-card tilt reveal">
+            <div class="card-index">R1</div>
+            <div class="research-icon waveform-icon" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+            <h3>OTFS Modulation</h3>
+            <p>Receiver design, performance analysis, channel estimation, waveform transformation, and implementation-oriented processing for rapidly time-varying wireless channels.</p>
+            <div class="card-tags"><span>High mobility</span><span>Delay–Doppler</span><span>Detection</span></div>
+          </article>
+
+          <article class="research-card tilt reveal" data-delay="70">
+            <div class="card-index">R2</div>
+            <div class="research-icon radar-icon" aria-hidden="true"><span></span></div>
+            <h3>Integrated Sensing & Communications</h3>
+            <p>Joint receiver methods that use shared wireless resources for data communication and target sensing in time-varying environments.</p>
+            <div class="card-tags"><span>ISAC</span><span>Sensing</span><span>Joint receiver</span></div>
+          </article>
+
+          <article class="research-card tilt reveal" data-delay="140">
+            <div class="card-index">R3</div>
+            <div class="research-icon nodes-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <h3>Signal Processing & Performance Analysis</h3>
+            <p>Error-performance analysis, channel uncertainty, oversampled reception, noise processing, and low-complexity receiver algorithms.</p>
+            <div class="card-tags"><span>PEP</span><span>Oversampling</span><span>Estimation</span></div>
+          </article>
+
+          <article class="research-card tilt reveal" data-delay="210">
+            <div class="card-index">R4</div>
+            <div class="research-icon chip-icon" aria-hidden="true"><span></span></div>
+            <h3>Waveform & Hardware-Aware Design</h3>
+            <p>PAPR reduction, SystemC modelling, FPGA-oriented transceiver development, SDR testing, and practical validation using MATLAB, Simulink, LabVIEW, and USRP platforms.</p>
+            <div class="card-tags"><span>PAPR</span><span>FPGA</span><span>SDR</span></div>
+          </article>
+        </div>
+
+        <div class="research-context glass reveal">
+          <div>
+            <span class="mini-label">PhD research topic</span>
+            <h3>Orthogonal Time Frequency Space Modulation</h3>
+          </div>
+          <div class="research-people">
+            <p><span>Advisor</span>A/Prof. Yi Hong</p>
+            <p><span>Collaborators</span>Dr. Preety Priya · Dr. Viduranga Wijekoon</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section publications" id="publications">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">03 · Publications</p>
+            <h2>Selected research outputs</h2>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filter publications">
+            <button class="filter-button active" type="button" data-publication-filter="all">All</button>
+            <button class="filter-button" type="button" data-publication-filter="published">Published</button>
+            <button class="filter-button" type="button" data-publication-filter="review">In review</button>
+            <button class="filter-button" type="button" data-publication-filter="preparation">In preparation</button>
+          </div>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item reveal" data-category="preparation">
+            <div class="publication-number">01</div>
+            <div class="publication-main">
+              <div class="publication-topline"><span class="status preparation">Under preparation</span><span>Research paper</span></div>
+              <h3>Noise Whitening and Error Performance Analysis of Oversampled DCT-based OTFS</h3>
+              <p>Nisal V. Kalpage, Preety Priya, and Yi Hong</p>
+            </div>
+            <button class="publication-expand" type="button" aria-label="Expand publication details">+</button>
+            <div class="publication-details"><p>Focuses on oversampled DCT-based OTFS reception, noise correlation, covariance processing, and error-performance analysis.</p></div>
+          </article>
+
+          <article class="publication-item reveal" data-category="review" data-delay="60">
+            <div class="publication-number">02</div>
+            <div class="publication-main">
+              <div class="publication-topline"><span class="status review">Under consideration</span><span>IEEE Transactions on Vehicular Technology</span></div>
+              <h3>Performance Analysis of Imperfect Delay and/or Doppler Shifts for OTFS</h3>
+              <p>Nisal V. Kalpage and Yi Hong</p>
+            </div>
+            <button class="publication-expand" type="button" aria-label="Expand publication details">+</button>
+            <div class="publication-details"><p>Examines OTFS performance when the receiver is affected by imperfect delay and/or Doppler shift information.</p></div>
+          </article>
+
+          <article class="publication-item reveal" data-category="published" data-delay="120">
+            <div class="publication-number">03</div>
+            <div class="publication-main">
+              <div class="publication-topline"><span class="status published">Published</span><span>IEEE Transactions on Vehicular Technology</span></div>
+              <h3>Performance Analysis and Joint Receiver Design for an OTFS-Based ISAC System in Time-Varying Channels</h3>
+              <p>Nisal V. Kalpage, Yi Hong, and Preety Priya</p>
+            </div>
+            <button class="publication-expand" type="button" aria-label="Expand publication details">+</button>
+            <div class="publication-details"><p>Develops and analyses an OTFS-based integrated sensing and communications receiver for time-varying channels.</p></div>
+          </article>
+
+          <article class="publication-item reveal" data-category="published" data-delay="180">
+            <div class="publication-number">04</div>
+            <div class="publication-main">
+              <div class="publication-topline"><span class="status published">Published</span><span>IEEE Communications Letters</span></div>
+              <h3>DCT-Based OTFS With Reduced PAPR</h3>
+              <p>Nisal V. Kalpage, Preety Priya, and Yi Hong</p>
+            </div>
+            <button class="publication-expand" type="button" aria-label="Expand publication details">+</button>
+            <div class="publication-details"><p>Introduces a DCT-based OTFS waveform design that targets reduced peak-to-average power ratio.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience" id="experience">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">04 · Journey</p>
+            <h2>Experience & education</h2>
+          </div>
+          <div class="tab-switcher" role="tablist" aria-label="Experience and education tabs">
+            <button class="tab-button active" type="button" role="tab" aria-selected="true" data-tab="career">Experience</button>
+            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab="education">Education</button>
+          </div>
+        </div>
+
+        <div class="timeline-panel active" data-panel="career">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Feb. 2023 — Present</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">Monash University · Clayton, Australia</span><h3>Teaching Associate / Associate Lecturer</h3></div>
+              <p>Teaching, coordination, laboratories, assessment, and student support across advanced signal processing, wireless communications, digital communications, analogue electronics, communications theory, information and networks, operating systems, and the ECSE Help Desk.</p>
+              <div class="compact-tags"><span>Deputy Unit Coordinator</span><span>Teaching</span><span>Student support</span></div>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Feb. 2022 — Jul. 2022</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">Curtin University – SLIIT International · Colombo, Sri Lanka</span><h3>University Associate / Academic Instructor</h3></div>
+              <p>Laboratory instruction and teaching support for Introduction to MATLAB, Mechanics Laboratory, and Electrical Systems.</p>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Dec. 2020 — Mar. 2021</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">Dialog Axiata PLC · Colombo, Sri Lanka</span><h3>Intern — Network Operations and Service Assurance</h3></div>
+              <p>Exposure to data-centre operations and management, physical and systems security, power management, and redundancy mechanisms.</p>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Nov. 2019 — Feb. 2020</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">OREL Corporation (Pvt.) Ltd. · Colombo, Sri Lanka</span><h3>Trainee Engineer — Research & Development</h3></div>
+              <p>Contributed to the OREL Smart Home IoT project, power-guard PCB development and testing, and general research and development activities.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="timeline-panel" data-panel="education" hidden>
+          <div class="timeline-line" aria-hidden="true"></div>
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Jul. 2022 — Present</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">Monash University · Clayton, Australia</span><h3>PhD Candidate, Electrical and Computer Systems Engineering</h3></div>
+              <p><strong>Research topic:</strong> Orthogonal Time Frequency Space Modulation.</p>
+              <p><strong>Advisor:</strong> A/Prof. Yi Hong · <strong>Collaborators:</strong> Dr. Preety Priya and Dr. Viduranga Wijekoon.</p>
+            </div>
+          </article>
+
+          <article class="timeline-entry reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-date">Feb. 2018 — Nov. 2021</div>
+            <div class="timeline-card glass">
+              <div><span class="mini-label">Curtin University and SLIIT (2+2) · Colombo, Sri Lanka</span><h3>B.Eng. in Electrical and Electronic Engineering (Honours)</h3></div>
+              <p>Course Weighted Average: <strong>87.97</strong> · First Class Honours · Top of the class.</p>
+              <p><strong>Thesis:</strong> Orthogonal Frequency Division Multiplexing Transceiver Design with SystemC and an FPGA Implementation.</p>
+              <p><strong>Advisor:</strong> Dr. Rohana Thilakumara.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teaching" id="teaching">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">05 · Teaching</p>
+            <h2>Teaching portfolio</h2>
+          </div>
+          <p>Undergraduate and postgraduate teaching across communications, signal processing, electronics, networks, operating systems, and student consultation.</p>
+        </div>
+
+        <div class="teaching-grid">
+          <article class="unit-card reveal"><span>ECE5883 / 6883</span><h3>Advanced Signal Processing</h3><p>Deputy Unit Coordinator</p></article>
+          <article class="unit-card reveal" data-delay="40"><span>ECE5884 / 6884</span><h3>Wireless Communications</h3><p>Deputy Unit Coordinator</p></article>
+          <article class="unit-card reveal" data-delay="80"><span>ECE3142</span><h3>Digital Communications</h3><p>Deputy Unit Coordinator</p></article>
+          <article class="unit-card reveal" data-delay="120"><span>ECE3161</span><h3>Analogue Electronics</h3><p>Teaching Associate</p></article>
+          <article class="unit-card reveal" data-delay="160"><span>ECE4042</span><h3>Communications Theory</h3><p>Teaching Associate</p></article>
+          <article class="unit-card reveal" data-delay="200"><span>ECE3141</span><h3>Information and Networks</h3><p>Teaching Associate</p></article>
+          <article class="unit-card reveal" data-delay="240"><span>FIT2100</span><h3>Operating Systems</h3><p>Teaching Associate</p></article>
+          <article class="unit-card reveal" data-delay="280"><span>ECSE</span><h3>Help Desk</h3><p>Student consultation and support</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">06 · Projects</p>
+            <h2>Engineering projects</h2>
+          </div>
+          <div class="filter-row" role="group" aria-label="Filter projects">
+            <button class="filter-button active" type="button" data-project-filter="all">All</button>
+            <button class="filter-button" type="button" data-project-filter="communications">Communications</button>
+            <button class="filter-button" type="button" data-project-filter="embedded">Embedded</button>
+            <button class="filter-button" type="button" data-project-filter="hardware">Hardware</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card tilt reveal" data-category="communications hardware">
+            <div class="project-visual project-visual-one"><span>OFDM</span><i></i><i></i><i></i><i></i></div>
+            <div class="project-content"><span class="mini-label">Transceiver · FPGA</span><h3>OFDM Transceiver Design with SystemC and FPGA Implementation</h3><p>SystemC transceiver modelling, VHDL development, and MATLAB-based testing and validation.</p><div class="compact-tags"><span>SystemC</span><span>VHDL</span><span>Verilog</span><span>FPGA</span><span>MATLAB</span></div></div>
+          </article>
+
+          <article class="project-card tilt reveal" data-category="embedded" data-delay="60">
+            <div class="project-visual project-visual-two"><span>EEPROM</span><div class="memory-grid"></div></div>
+            <div class="project-content"><span class="mini-label">Embedded systems</span><h3>EEPROM Memory Levelling Algorithm</h3><p>Memory-levelling logic designed to extend EEPROM read-write endurance for a NodeMCU-based smart-light project.</p><div class="compact-tags"><span>Arduino</span><span>C++</span><span>NodeMCU</span></div></div>
+          </article>
+
+          <article class="project-card tilt reveal" data-category="embedded" data-delay="120">
+            <div class="project-visual project-visual-three"><span>IoT</span><div class="signal-rings"></div></div>
+            <div class="project-content"><span class="mini-label">Smart home</span><h3>OREL Smart Home IoT</h3><p>Development and testing contributions across smart bulb, smart roller door, and connected-home components.</p><div class="compact-tags"><span>Arduino</span><span>JSON</span><span>MQTT</span><span>Google IoT</span><span>OTA</span></div></div>
+          </article>
+
+          <article class="project-card tilt reveal" data-category="hardware" data-delay="180">
+            <div class="project-visual project-visual-four"><span>PCB</span><div class="pcb-lines"></div></div>
+            <div class="project-content"><span class="mini-label">Power electronics</span><h3>OREL Power Guard Design</h3><p>Research, implementation, and testing of a power-guard device and its protection functionality.</p><div class="compact-tags"><span>Altium</span><span>PCB</span><span>Variac</span></div></div>
+          </article>
+
+          <article class="project-card tilt reveal" data-category="embedded hardware" data-delay="240">
+            <div class="project-visual project-visual-five"><span>RF</span><div class="lock-shape"></div></div>
+            <div class="project-content"><span class="mini-label">RF · Access control</span><h3>RF-Based Smart Lock</h3><p>Keyless household entry system using radio-frequency transmission and embedded-system design.</p><div class="compact-tags"><span>Arduino</span><span>Altium</span><span>PCB</span><span>RF</span></div></div>
+          </article>
+
+          <article class="project-card tilt reveal" data-category="communications" data-delay="300">
+            <div class="project-visual project-visual-six"><span>USRP</span><svg viewBox="0 0 240 100" aria-hidden="true"><path d="M0 50 C20 10 40 90 60 50 S100 10 120 50 S160 90 180 50 S220 10 240 50"></path></svg></div>
+            <div class="project-content"><span class="mini-label">Software-defined radio</span><h3>LabVIEW and MATLAB–Simulink USRP Testing</h3><p>Implementation and evaluation of modulation, waveform, receiver, and RF-processing techniques on SDR hardware.</p><div class="compact-tags"><span>LabVIEW</span><span>MATLAB</span><span>Simulink</span><span>SDR</span><span>USRP</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section awards" id="awards">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div>
+            <p class="eyebrow">07 · Recognition</p>
+            <h2>Honours & awards</h2>
+          </div>
+          <p>A record of research communication, academic achievement, scholarship, leadership, and all-round performance.</p>
+        </div>
+
+        <div class="awards-grid">
+          <article class="award-card highlight reveal"><span class="award-year">2026</span><h3>Faculty of Engineering Post Publication Award</h3><p>Monash University</p><small>Competitive award for PhD students following thesis submission.</small></article>
+          <article class="award-card reveal" data-delay="40"><span class="award-year">2025</span><h3>People's Choice Award — Department 3MT</h3><p>ECSE, Monash University</p></article>
+          <article class="award-card reveal" data-delay="80"><span class="award-year">2024</span><h3>Best Presentation</h3><p>Monash University</p><small>Software and Hardware category.</small></article>
+          <article class="award-card reveal" data-delay="120"><span class="award-year">2024</span><h3>2nd Place — Faculty 3MT</h3><p>Faculty of Engineering, Monash University</p></article>
+          <article class="award-card reveal" data-delay="160"><span class="award-year">2024</span><h3>1st Place — Department 3MT</h3><p>ECSE, Monash University</p></article>
+          <article class="award-card reveal" data-delay="200"><span class="award-year">2022</span><h3>Monash Graduate Scholarship</h3><p>Monash University</p></article>
+          <article class="award-card reveal award-extra" data-delay="240"><span class="award-year">2022</span><h3>Monash International Tuition Scholarship</h3><p>Monash University</p></article>
+          <article class="award-card reveal award-extra" data-delay="280"><span class="award-year">2022</span><h3>Best All Rounder</h3><p>Curtin Alumni Sri Lanka Chapter</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2022</span><h3>Curtin Award of Excellence</h3><p>Electrical and Electronic Engineering</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2022</span><h3>Valedictorian Speaker</h3><p>Curtin University (Sri Lanka) Convocation</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2021</span><h3>Curtin Extra Award</h3><p>Curtin University</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2020</span><h3>Vice-Chancellor's List Award</h3><p>Curtin University</p><small>Top 1% across Curtin University campuses.</small></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2020–2021</span><h3>Letters of Commendation</h3><p>Curtin University</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2018–2019</span><h3>Dean's List Award</h3><p>Sri Lanka Institute of Information Technology</p></article>
+          <article class="award-card reveal award-extra"><span class="award-year">2018–2019</span><h3>SLIIT Scholarship</h3><p>Sri Lanka Institute of Information Technology</p></article>
+        </div>
+        <div class="centre"><button class="button secondary show-awards" type="button">Show all awards <span>↓</span></button></div>
+      </div>
+    </section>
+
+    <section class="section talks-service" id="service">
+      <div class="shell split-cards">
+        <div class="content-card reveal">
+          <p class="eyebrow">08 · Talks</p>
+          <h2>Seminars & presentations</h2>
+          <div class="talk-list">
+            <article><time>Sep. 2025</time><div><h3>Error Performance Analysis of OTFS with Imperfect Channel Estimation</h3><p>Department of Electrical and Computer Systems Engineering, Monash University</p></div></article>
+            <article><time>Nov. 2024</time><div><h3>PAPR Analysis of DCT-Based OTFS</h3><p>Monash Engineering Postgraduate Conference</p></div></article>
+            <article><time>Sep. 2024</time><div><h3>Orthogonal Time Frequency Space Fundamentals and Applications</h3><p>Department of Electrical and Computer Systems Engineering, Monash University</p></div></article>
+            <article><time>Jul. 2024</time><div><h3>OTFS-Based ISAC Joint Receiver Design</h3><p>Department of Electrical and Computer Systems Engineering, Monash University</p></div></article>
+            <article><time>Jul. 2023</time><div><h3>DCT-Based OTFS With Reduced PAPR</h3><p>Department of Electrical and Computer Systems Engineering, Monash University</p></div></article>
+          </div>
+        </div>
+
+        <div class="content-card reveal" data-delay="100">
+          <p class="eyebrow">09 · Service</p>
+          <h2>Academic service & supervision</h2>
+          <div class="service-block">
+            <span class="mini-label">Journal peer reviewer</span>
+            <ul><li>IEEE Communications Letters</li><li>IEEE Transactions on Communications</li><li>IEEE Transactions on Signal Processing</li><li>IEEE Transactions on Wireless Communications</li></ul>
+          </div>
+          <div class="service-block">
+            <span class="mini-label">Final-year project supervision</span>
+            <ul><li>Waveform Design for Wireless Communication</li><li>OTFS Transmitter Performance Analysis</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section leadership" id="leadership">
+      <div class="shell">
+        <div class="section-heading horizontal reveal">
+          <div><p class="eyebrow">10 · Leadership</p><h2>Community & leadership</h2></div>
+          <p>Leadership and service across postgraduate, engineering, alumni, IEEE, innovation, and international-student communities.</p>
+        </div>
+        <div class="leadership-marquee" aria-label="Leadership roles">
+          <div class="marquee-track">
+            <span>President · ECSE PG Community, Monash University</span><span>Organising Committee · 4th Engineering Postgraduate Conference</span><span>Executive Committee · Curtin University Alumni Sri Lanka Chapter</span><span>President · Faculty of Engineering Student Community</span><span>Vice-President · Engineering Research and Innovations Club</span><span>Treasurer · IEEE Student Branch SLIIT</span><span>Curtin International Student Leaders Working Group</span><span>Finance Team · Techno Meetup Sri Lanka, IEEE Sri Lanka Section</span>
+            <span aria-hidden="true">President · ECSE PG Community, Monash University</span><span aria-hidden="true">Organising Committee · 4th Engineering Postgraduate Conference</span><span aria-hidden="true">Executive Committee · Curtin University Alumni Sri Lanka Chapter</span><span aria-hidden="true">President · Faculty of Engineering Student Community</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="shell contact-panel reveal">
+        <div>
+          <p class="eyebrow">11 · Contact</p>
+          <h2>Let’s discuss research, engineering, or collaboration.</h2>
+          <p>For research collaborations, academic opportunities, consulting-oriented engineering work, or professional enquiries, reach out directly.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:vihankalpage@gmail.com"><span>Email</span><strong>vihankalpage@gmail.com</strong><i>↗</i></a>
+          <a href="tel:+61418596123"><span>Phone</span><strong>+61 41 859 6123</strong><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/vihan-kalpage" target="_blank" rel="noreferrer"><span>LinkedIn</span><strong>vihan-kalpage</strong><i>↗</i></a>
+          <a href="Nisal-Kalpage-CV.pdf" target="_blank" rel="noreferrer"><span>Curriculum Vitae</span><strong>View the full CV</strong><i>↗</i></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><strong>Nisal Vihan Kalpage</strong><p>Electrical Engineer · Researcher · PhD Candidate</p></div>
+      <div class="footer-links"><a href="#top">Back to top ↑</a><a href="https://github.com/Vihankalpage" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/vihan-kalpage" target="_blank" rel="noreferrer">LinkedIn</a></div>
+      <p class="copyright">© <span id="year"></span> Nisal Vihan Kalpage</p>
+    </div>
+  </footer>
+
+  <dialog class="command-palette" aria-labelledby="command-title">
+    <div class="command-head">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <input id="command-search" type="search" placeholder="Navigate or open a link…" autocomplete="off">
+      <button type="button" class="command-close" aria-label="Close quick navigation">Esc</button>
+    </div>
+    <h2 id="command-title" class="sr-only">Quick navigation</h2>
+    <div class="command-results">
+      <button type="button" data-target="#about"><span>About</span><small>Profile and expertise</small></button>
+      <button type="button" data-target="#research"><span>Research</span><small>OTFS, ISAC, signal processing</small></button>
+      <button type="button" data-target="#publications"><span>Publications</span><small>Research outputs</small></button>
+      <button type="button" data-target="#experience"><span>Experience</span><small>Career and education timeline</small></button>
+      <button type="button" data-target="#projects"><span>Projects</span><small>Engineering portfolio</small></button>
+      <button type="button" data-target="#awards"><span>Awards</span><small>Honours and scholarships</small></button>
+      <button type="button" data-target="#contact"><span>Contact</span><small>Email, phone, and CV</small></button>
+      <a href="Nisal-Kalpage-CV.pdf" target="_blank"><span>Open CV</span><small>View the complete PDF résumé</small></a>
+    </div>
+    <div class="command-footer"><span>↑↓ Navigate</span><span>Enter Open</span><span>Esc Close</span></div>
+  </dialog>
+
+  <noscript><div class="noscript">This website works without JavaScript, but interactive filters and animations require JavaScript.</div></noscript>
+  <script src="script.js"></script>
+</body>
+</html>
