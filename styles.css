@@ -385,3 +385,181 @@ html[data-theme="light"] .theme-toggle .moon-icon { display: block; }
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* =========================================================
+   Professional palette refresh — v3
+   Flat, restrained surfaces with no ambient/faded backdrops.
+   ========================================================= */
+:root {
+  --bg: #0b1220;
+  --bg-soft: #111827;
+  --surface: #111827;
+  --surface-solid: #111827;
+  --surface-elevated: #172033;
+  --text: #f8fafc;
+  --muted: #b5c0cf;
+  --faint: #8391a3;
+  --line: #263244;
+  --line-strong: #354258;
+  --primary: #20b7a5;
+  --primary-strong: #149282;
+  --secondary: #4f8ee8;
+  --accent: #94a3b8;
+  --warning: #d9aa42;
+  --danger: #d36b7c;
+  --primary-soft: #102b2a;
+  --secondary-soft: #142741;
+  --warning-soft: #302712;
+  --on-primary: #061d1a;
+  --shadow: 0 16px 40px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="light"] {
+  --bg: #f7f9fc;
+  --bg-soft: #eef2f6;
+  --surface: #ffffff;
+  --surface-solid: #ffffff;
+  --surface-elevated: #f2f5f8;
+  --text: #0f172a;
+  --muted: #475569;
+  --faint: #6b7a8d;
+  --line: #d9e1ea;
+  --line-strong: #c3ceda;
+  --primary: #0f766e;
+  --primary-strong: #115e59;
+  --secondary: #2459a9;
+  --accent: #536273;
+  --warning: #946200;
+  --danger: #ad3d55;
+  --primary-soft: #e8f3f1;
+  --secondary-soft: #eaf0f8;
+  --warning-soft: #fbf2db;
+  --on-primary: #ffffff;
+  --shadow: 0 14px 34px rgba(15, 23, 42, 0.10);
+}
+
+body { background: var(--bg); }
+#network-canvas,
+.ambient { display: none !important; }
+
+.scroll-progress span {
+  background: var(--primary);
+  box-shadow: none;
+}
+
+.site-header.scrolled {
+  background: var(--bg);
+  border-color: var(--line);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.brand-mark,
+.icon-button,
+.menu-toggle,
+.mobile-nav,
+.availability-pill,
+.expertise-cloud span,
+.compact-tags span,
+.card-tags span,
+.tab-switcher,
+.marquee-track span,
+.command-palette {
+  background: var(--surface-solid);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+.brand-mark { box-shadow: none; }
+.mobile-nav { background: var(--bg); }
+
+.profile-photo-frame {
+  background: var(--surface-solid);
+  border: 3px solid var(--primary);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .18);
+}
+.profile-photo-frame::after { display: none; }
+.profile-photo-frame img { border-color: var(--surface-solid); }
+.availability-pill span { box-shadow: none; }
+
+.gradient-text {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--primary);
+  -webkit-text-fill-color: currentColor;
+}
+
+.button.primary {
+  color: var(--on-primary);
+  background: var(--primary);
+  box-shadow: none;
+}
+.button.primary:hover {
+  background: var(--primary-strong);
+  box-shadow: none;
+}
+.button.secondary { background: var(--surface-solid); }
+.button.secondary:hover { background: var(--surface-elevated); border-color: var(--line-strong); }
+
+.research,
+.teaching { background: var(--bg-soft); }
+
+.research-card,
+.glass,
+.unit-card,
+.project-card,
+.award-card,
+.content-card,
+.contact-panel {
+  background: var(--surface-solid);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+}
+
+.research-card { box-shadow: 0 8px 24px rgba(0, 0, 0, .07); }
+.research-card::before { display: none; }
+.research-card.feature-card,
+.award-card.highlight { background: var(--surface-elevated); }
+.award-card.highlight { border-left: 3px solid var(--primary); }
+.research-icon { background: var(--surface-elevated); }
+
+.filter-button:hover,
+.filter-button.active {
+  border-color: var(--primary);
+  color: var(--on-primary);
+  background: var(--primary);
+}
+
+.status.published { color: var(--primary); background: var(--primary-soft); }
+.status.review { color: var(--warning); background: var(--warning-soft); }
+.status.preparation { color: var(--secondary); background: var(--secondary-soft); }
+
+.publication-details { background: var(--surface-elevated); }
+.tab-button.active { background: var(--surface-elevated); box-shadow: none; }
+.timeline-line { background: var(--line-strong); opacity: 1; }
+.timeline-marker { box-shadow: none; }
+
+.unit-card:hover {
+  border-color: var(--primary);
+  background: var(--surface-elevated);
+}
+
+.project-visual { background: var(--bg-soft); }
+.award-card:hover { border-color: var(--primary); }
+
+.leadership-marquee { mask-image: none; -webkit-mask-image: none; }
+
+.contact-panel { box-shadow: var(--shadow); }
+.command-palette { box-shadow: 0 26px 70px rgba(0,0,0,.34); }
+.command-palette::backdrop { background: rgba(3, 8, 18, .70); backdrop-filter: none; }
+.command-results button:hover,
+.command-results button.selected,
+.command-results a:hover,
+.command-results a.selected { background: var(--surface-elevated); }
+
+html[data-theme="light"] .status.published { color: #0f766e; }
+html[data-theme="light"] .status.review { color: #7a5100; }
+html[data-theme="light"] .status.preparation { color: #2459a9; }
+\n\n/* =========================================================\n   Hero refinement — v4\n   Name-led academic introduction.\n   ========================================================= */\n.hero-stack {\n  gap: 30px;\n}\n\n.hero-profile {\n  gap: 12px;\n}\n\n.profile-caption strong {\n  display: none;\n}\n\n.profile-caption span {\n  font-size: .86rem;\n  font-weight: 500;\n  letter-spacing: .01em;\n}\n\n.hero-content {\n  max-width: 980px;\n}\n\n.hero-content .kicker {\n  margin: 0 0 14px;\n}\n\n.hero h1.hero-name {\n  max-width: 1050px;\n  margin: 0 0 24px;\n  font-size: clamp(4rem, 7.2vw, 6.4rem);\n  line-height: .96;\n  letter-spacing: -.06em;\n  color: var(--text);\n}\n\n.hero-intro {\n  max-width: 820px;\n  font-size: clamp(1.08rem, 1.5vw, 1.28rem);\n  line-height: 1.75;\n}\n\n.hero-location {\n  order: initial;\n  margin: 24px 0 0;\n}\n\n.hero-actions {\n  margin-top: 28px;\n}\n\n@media (max-width: 780px) {\n  .hero h1.hero-name {\n    font-size: clamp(3.4rem, 13vw, 5.4rem);\n  }\n}\n\n@media (max-width: 520px) {\n  .hero h1.hero-name {\n    font-size: clamp(3rem, 15vw, 4.35rem);\n  }\n\n  .hero-intro {\n    font-size: 1.03rem;\n    line-height: 1.68;\n  }\n}\n
